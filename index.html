@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachin Mohanty's Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #1a1a1a, #333);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: #fff;
+            transition: background 0.5s;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            transition: box-shadow 0.5s;
+        }
+
+        .container:hover {
+            box-shadow: 0 0 20px rgba(0,0,0,0.7);
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        header h1:hover {
+            color: #77aaff;
+        }
+
+        .photo {
+            display: block;
+            margin: 20px auto;
+            border-radius: 15px;
+            width: 200px;
+            height: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            transition: box-shadow 0.5s, transform 0.5s;
+        }
+
+        .photo:hover {
+            box-shadow: 0 0 20px rgba(0,0,0,0.7);
+            transform: scale(1.05);
+        }
+
+        .section {
+            margin: 20px 0;
+        }
+
+        .section h2 {
+            background: #77aaff;
+            color: #fff;
+            padding: 10px;
+            margin: 0 0 10px 0;
+            text-align: center;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .section h2:hover {
+            background: #558bcc;
+            color: #e0e0e0;
+        }
+
+        .section p {
+            margin: 0;
+            text-align: center;
+            transition: color 0.3s;
+        }
+
+        .section p:hover {
+            color: #cccccc;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            transition: border-color 0.3s;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #77aaff;
+            color: white;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        th:hover {
+            background-color: #558bcc;
+            color: #e0e0e0;
+        }
+
+        td:hover {
+            border-color: #77aaff;
+        }
+
+        .skills img {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .skills img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        .contact {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 5px 0;
+            transition: color 0.3s;
+        }
+
+        .contact p:hover {
+            color: #77aaff;
+        }
+
+        .linkedin img {
+            width: 20px;
+            vertical-align: middle;
+        }
+
+        .linkedin:hover img {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sachin Mohanty</h1>
+        </header>
+        
+        <img src="myphoto.jpeg" alt="Photo" class="photo">
+        
+        <div class="section">
+            <h2>About</h2>
+            <p>Hi, I am a Web Developer/Engineer/Software Developer.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Education</h2>
+            <table>
+                <tr>
+                    <th>Institution</th>
+                    <th>Degree/Marks</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>St. John's Marhauli, Varanasi</td>
+                    <td>Class 10, 92%</td>
+                    <td>2020</td>
+                </tr>
+                <tr>
+                    <td>Jawahar Navodaya Vidyalaya</td>
+                    <td>Class 12, 95.6%</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>Indian Institute of Information Technology</td>
+                    <td>BTech ECE, 8.5 CGPA</td>
+                    <td>2027</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" alt="C">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png" alt="DBMS">
+            </div>
+        </div>
+        
+        <div class="section contact">
+            <h2>Contact Information</h2>
+            <p><strong>Phone:</strong> 8787022847</p>
+            <p><strong>Email:</strong> sachin.mohanty23b@iiitg.ac.in</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sachin-mohanty-b62663284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="linkedin"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn"> Sachin Mohanty</a></p>
+        </div>
+    </div>
+</body>
+</html>
